@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>delivery food app</title>
+<style>
+    body{
+        padding: 0%;
+        margin: 0%;
+        font-family: "Quicksand", sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .cointainer{
+        width: 80%;
+        height: 400px;
+        background-color: #12121200;
+        margin: 30px 150px;
+        border-radius: 15px;
+    }
+    .pageinfo{
+        width: 80%;
+        height: 400px;
+        background-color: #12121200;
+        color: beige;
+        border-radius: 15px;
+        margin-top: -420px;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: start;
+        text-align: start;
+        margin-left: 20px;
+
+    }
+    .navhome:hover,.nav-signup:hover,.navinfo:hover{
+        transform: scale(1.2);
+    }
+    .pageinfo > h2 , .pageinfo > p {
+            width: 50%;
+            text-align: center;
+            margin: 2px;
+    }
+
+    .nav{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color:rgba(112, 128, 144, 0);
+        font-size: 20px;
+        border: 2px solid black;}
+
+    .navhome{
+        background-color: beige;
+        padding: 5px 10px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        color: #121212;
+        background-color: #12121200;
+        margin: 5px;
+    }
+    .navinfo{
+        background-color: bisque;
+        padding: 5px 10px;
+        margin: 2px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        color: #121212;
+        background-color: #12121200;
+        border-radius: 5px;
+
+    }
+    .navinfo >a{
+        display: flex;
+        margin: 10px;
+        flex-direction: row;
+        text-decoration: none;
+        color: #121212;
+
+    }
+    .nav-signup {
+        background-color: beige;
+        padding: 5px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        color: #121212;
+        background-color: #12121200;
+        border: #121212;
+
+
+    }
+    .nav-signup > img , .nav-signup > button {
+        margin: 5px;
+}
+        .btn-signup{
+            padding: 20px 20px;
+            border: #121212;
+            border-radius: 8px;
+            color: beige;
+            background-color:orange;
+            padding: 7px 10px;
+        }
+        .btn-signup1{
+            padding: 5px 10px;
+            border: #121212;
+            border-radius: 10px;
+            color:black;
+            background-color: beige;
+            padding: 10px 10px;
+        }
+            .btn-signup1:hover{
+            background-color:black;
+            color: white;}
+        .btn-signup:hover{
+            background-color:darkorange;
+            color: black;
+            padding: 10px 10px;
+
+        }
+
+        @media only screen and (max-width:600px) {
+            .navinfo,.pageinfo>p,.cointainer1>p{
+                display: none;
+            }
+        }
+        .cointainer1{
+        width: 80%;
+        height: 450px;
+        background-color:rgba(0, 0, 0, 0);
+        margin: 30px 150px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        border-bottom: 2px black;
+
+    }.cointainer2{
+        width: 90%;
+        height: 200px;
+        background-color:rgba(255, 255, 255, 0);
+        margin: 30px 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        overflow-y:hidden;
+        padding: 10px 0;
+
+    }
+        .cointainer3{
+        width: 15%;
+        height: 150px;
+        background-color:rgba(0, 0, 0, 0);
+        color: #121212;
+        margin:30px 60px;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dishes-container {
+            width: 80%;
+            margin-top: -10px;
+        }
+
+        .dishes {
+            width: 100%;
+            padding: 10px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .dish {
+            width: 300px;
+            height: 350px;
+            border: 1px solid #121212;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+        .dish-image {
+            height: 50%;
+        }
+        .dish-container {
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .dish-info {
+            width: 95%;
+        }
+        .dish-desc {
+            margin-top: -10px;
+            font-size: .9rem;
+        }
+.dish:hover{
+    transform:scale(1.05)
+}
+
+</style>
+</head>
+<body>
+    <div class="nav">
+        <div class="navhome">Brand</div>
+    <div class="navinfo">
+        <a href="/" >Home</a>
+        <a href="/" >Menu</a>
+        <a href="/" >Contact us</a></div>
+        <div class="nav-signup">
+            <img src="icons8-bag-48.png" alt="cart">
+            <button class="btn-signup">Sign up</button>
+        </div>
+        
+    </div>
+    <div class="cointainer">
+        <img src="pexels-jonathanborba-2983101.jpg" style="object-fit: cover; width: 100%; height: 100%; border-radius: 15px;"/>
+    </div>
+    <div class="pageinfo" style="text-align: start;">
+        <h1 style="color:white; ">Order Your Favorite Food</h1>
+        <p style="color:white; font-size: 20px;">Choose from a diverse menu featuring a delectable array of dishes crafted with the finest ingredients and culinary expertise. </p>
+        <button class="btn-signup1" >View Menu</button>
+    </div><br>
+    <hr>
+    <div class="cointainer1">
+        <h2 style="color: #121212;">Explore Our Menu</h2>
+        <p style="color: #121212;font-size: large ;">Choose from a diverse menu featuring a delectable array of dishes. Our mission is to satisfy your cravings and elevate your dining experience, one delicious meal at a time.</p>
+        <div class="cointainer2"></div>
+
+    </div>
+    <hr style="border: 1px solid grey; width: 90%;margin-top: -50px;">
+    <div class="dishes-container">
+        <h2 style="margin: bottom 10px; ">Top dishes near you</h2>
+        <div class="dishes"></div>
+    
+    </div>
+<script>
+   const imgscr = ["menu_1-CpSfC1Ff.webp", "menu_4-CpXAwO71.webp", "menu_1-CpSfC1Ff.webp", "menu_1-CpSfC1Ff.webp", "menu_1-CpSfC1Ff.webp", "./assets/menu_6-BAKCTvIj.webp", "menu_1-CpSfC1Ff.webp", "menu_1-CpSfC1Ff.webp"]
+  const imgname = ["Salad", "Rolls", "Deserts", "Sandwich", "Cake", "Pure Veg", "Pasta", "Noodles"]
+    let htmlData = ""
+        for(let i = 0; i < imgscr.length; i++){
+            htmlData = htmlData + 
+            `
+            <div class="food-item" id="food-item-${i}"" onclick="update(this)">
+                <img src="${imgscr[i]}"/>
+                <p>${imgname[i]}</p>
+            </div>
+            \n
+            ` 
+        }
+        console.log(htmlData)
+        document.getElementsByClassName("cointainer2")[0].innerHTML = htmlData
+        
+        function updateSalad() {
+            const salad = [
+            {
+                imgSrc : 'WhatsApp Image 2025-03-10 at 15.30.14_b9b96798.jpg',
+                name : 'Greek salad',
+                desc : 'Food provides essential nutrients for overall health and well-being',
+                price : 120,
+                ratings : 4
+            },
+            {
+                imgSrc : 'WhatsApp Image 2025-03-10 at 15.30.14_aa027610.jpg',
+                name : 'Veg salad',
+                desc : 'Food provides essential nutrients for overall health and well-being',
+                price : 180,
+                ratings : 4
+            },
+            {
+                imgSrc : 'WhatsApp Image 2025-03-10 at 15.30.14_437a83a2.jpg',
+                name : 'Clover Salad',
+                desc : 'Food provides essential nutrients for overall health and well-being',
+                price : 160,
+                ratings : 4
+            },
+            {
+                imgSrc : 'WhatsApp Image 2025-03-10 at 15.30.14_6a94f55c.jpg',
+                name : 'Chicken Salad',
+                desc : 'Food provides essential nutrients for overall health and well-being',
+                price : 240,
+                ratings : 4
+            }
+        ]
+
+
+        let dishesdata = ''
+        for(let i = 0; i < salad.length; i++){
+            dishesdata += 
+            `<div class="dish">
+                <img src="${salad[i].imgSrc}" class="dish-image" style="object-fit: cover; width: 100%; height: 60%; border-top-left-radius: 10px; border-top-right-radius: 10px;"/>
+                <div class="dish-container">
+                    <div class="dish-info">
+                        <h4 class="dish-title">${salad[i].name}</h4>
+                        <p class="dish-desc">${salad[i].desc}</p>
+                        <p class="dish-price">₹${salad[i].price}</p>
+                    </div>
+                </div>
+            </div>\n`
+        }
+
+        document.getElementsByClassName('dishes')[0].innerHTML = dishesdata
+
+        }
+        function update(obj) {
+            if(obj.id === 'food-item-0'){ 
+                updateSalad()
+            }
+            else if(obj.id === 'food-item-1'){ 
+                updateRolls()
+            }
+            console.log(obj.id)
+        }
+
+
+</script>
+  
+</body>
+</html>
